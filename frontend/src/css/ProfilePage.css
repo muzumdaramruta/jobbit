@@ -1,0 +1,44 @@
+.profile-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.profile-info {
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+}
+
+.profile-saved-jobs,
+.profile-applied-jobs,
+.profile-posted-jobs {
+    padding-top: 50px;
+    border-top: 1px solid #ccc;
+}
+
+
+.job-item {
+    display: flex;
+    align-items: center;
+}
+
+.info-item p,
+.job-item p {
+    margin-top: revert;
+    overflow-wrap: anywhere;
+}

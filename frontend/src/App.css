@@ -1,0 +1,342 @@
+:root {
+  --yellow: #ffd60a;
+  --disabled-yellow: #fee57a;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar {
+    padding: 0;
+  }
+
+  .navbar .navbar-nav .nav-link {
+    padding: 1em 0;
+  }
+
+  .navbar .navbar-nav .nav-item {
+    margin: 0 1em;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .website-description-img img {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer .row {
+    text-align: center;
+  }
+}
+
+.navbar .navbar-nav .nav-item {
+  position: relative;
+}
+
+.navbar .navbar-nav .nav-item::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  content: "";
+  background-color: black;
+  width: 0%;
+  height: 4px;
+  transition: all 0.1s;
+}
+
+.navbar .navbar-nav .nav-item:hover::after {
+  width: 100%;
+}
+
+/* navbar link width 100% on active */
+.navbar .navbar-nav .nav-item.active::after {
+  width: 100%;
+}
+
+footer h5 {
+  margin-top: 1em;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  padding: 1em;
+}
+
+.btn {
+  background-color: var(--yellow);
+  border-color: #000000;
+}
+
+/* btn disabled */
+.btn:disabled {
+  background-color: var(--disabled-yellow);
+}
+
+.company-rating {
+  font-size: 15px;
+}
+
+.company-name h4 {
+  text-align: left !important;
+}
+
+.company-logo img {
+  margin: 0 auto;
+  max-width: 100px;
+  border: 1px solid rgba(107, 121, 124, 0.3);
+  border-radius: 10%;
+  padding: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.company-content h3 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  margin-top: 7px;
+}
+
+.job-type {
+  font-size: 13px;
+  padding: 2px 20px;
+  margin-top: 5px;
+  line-height: 1.7;
+  border-radius: 2px;
+  color: black;
+  background: var(--yellow) !important;
+  font-weight: normal;
+}
+
+.company {
+  background: #ffffff;
+  margin: 20px 0;
+  padding: 1em;
+  border: 1px solid rgba(107, 121, 124, 0.3);
+  -webkit-box-shadow: 0 5px 25px 0 rgba(0, 0, 0, .07);
+  box-shadow: 0 5px 25px 0 rgba(0, 0, 0, .07);
+}
+
+/* add visible hover transition to company class */
+.company:hover {
+  -webkit-box-shadow: 0 5px 25px 0 rgba(0, 0, 0, .2);
+  box-shadow: 0 5px 25px 0 rgba(0, 0, 0, .2);
+  transition: all 0.3s ease-in-out;
+}
+
+.companies svg[class*="fa-"] {
+  margin-right: 10px;
+}
+
+a {
+  color: black;
+}
+
+.company-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/* search */
+.form-control,
+.form-select,
+.form-check-input {
+  border-color: #000000;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #000000;
+  box-shadow: none;
+  border-bottom: 3px solid #000000;
+}
+
+.nav-link.active {
+  border-color: #000000;
+  box-shadow: none;
+  border-bottom: 3px solid #000000;
+  }
+  
+  .nav-tabs .nav-link {
+    color: #000000;
+    border-bottom: transparent;
+  }
+  
+  .nav-tabs .nav-link.active {
+    background-color: var(--yellow);
+    border-color: #000000;
+}
+
+#search {
+  width: 100%;
+}
+
+#search-form ul {
+  width: 100%;
+}
+
+#search-form .form-control {
+  height: 60px;
+}
+
+.col-md-4 h4 {
+  text-align: center;
+}
+
+.col-md-4 menu {
+  padding-left: 50px;
+}
+
+.col-md-4 li {
+  padding: 8px;
+}
+
+.col-md-4 h2 {
+  padding-bottom: 8px;
+}
+
+
+.carousel-item img {
+  max-height: 500px;
+  /* or any other value you prefer */
+}
+
+.memcard {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+
+}
+
+.memcard:hover {
+  box-shadow: 0 6px 8px rgb(0, 0, 0);
+  transform: scale(1.05);
+}
+
+
+@keyframes shape-change {
+
+  0% {
+    transform: scale(1) rotate(0deg);
+    opacity: 0.5;
+  }
+
+  25% {
+    transform: scale(1.1) rotate(0deg);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(0.9) rotate(-10deg);
+    opacity: 0.3;
+  }
+
+  75% {
+    transform: scale(1.1) rotateY(150deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 0.5;
+  }
+
+}
+
+
+/* Apply the animation to the image */
+.website-description-img .img-fluid {
+  animation-name: shape-change;
+  animation-duration: 5s;
+  animation-iteration-count: infinite
+}
+
+/* pagination text colour to be yllow */
+.pagination .page-link {
+  color: black;
+}
+
+/* pagination active background colour to be yellow */
+.pagination .page-item.active .page-link {
+  background-color: var(--yellow);
+  border-color: var(--yellow);
+}
+
+.progress-bar {
+  background-color: var(--yellow);
+  border-color: black;
+}
+
+.form-check-input:checked {
+  background-color: var(--yellow);
+  border-color: var(--yellow);
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--yellow);
+  color: black;
+}
+
+#membership .btn {
+  margin-top: 1em;
+}
+
+.testimonial-slider .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 100%;
+}
+
+.testimonial-slider {
+  padding: 10px 0px 40px;
+}
+
+/* add nice review font for blockquote inside the carousell */
+.testimonial-slider blockquote {
+  font-family: 'initial';
+  font-style: italic;
+}
+
+/* dropdown active background colour to yellow */
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: var(--yellow);
+  color: black;
+}
+
+/* overflow dropdown text */
+.dropdown-menu {
+  overflow: auto;
+}
+
+/* padding to follow-us a tags */
+.follow-us a {
+  margin: 20px;
+}
+
+/* toast colour */
+.toast {
+  background-color: var(--yellow);
+  border-color: black;
+  color: black;
+  background-color: black;
+    color: white;
+}
+
+.btn {
+  color: #000000;
+}

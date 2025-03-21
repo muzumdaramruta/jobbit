@@ -1,0 +1,9 @@
+# Mac files
+.DS_Store
+
+# Node files
+*/node_modules/
+
+# Vercel files
+.vercel/
+backend/.vercel/

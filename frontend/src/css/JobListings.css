@@ -1,0 +1,66 @@
+:root {
+  --yellow: #ffd60a;
+  --disabled-yellow: #ffd60a;
+}
+
+.job {
+  background: #ffffff;
+  margin: 20px 0;
+  padding: 1em;
+  border: 1px solid rgba(107, 121, 124, 0.3);
+  -webkit-box-shadow: 0 5px 25px 0 rgba(0, 0, 0, .07);
+  box-shadow: 0 5px 25px 0 rgba(0, 0, 0, .07);
+}
+
+/* add visible hover transition to company class */
+.job:hover {
+  -webkit-box-shadow: 0 5px 25px 0 rgba(0, 0, 0, .2);
+  box-shadow: 0 5px 25px 0 rgba(0, 0, 0, .2);
+  transition: all 0.3s ease-in-out;
+}
+
+.job p {
+  margin-bottom: 1rem !important;
+}
+
+.jobs svg[class*="fa-"] {
+  margin-right: 10px;
+}
+
+.job svg:hover {
+  cursor: pointer;
+}
+
+.star-icon {
+  margin-left: 10px;
+}
+
+.job-listing-title {
+  overflow-wrap: anywhere
+}
+
+
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-menu li {
+  padding: 8px 12px;
+  text-decoration: none;
+  display: block;
+  color: black;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block; /* Show the dropdown menu on hover */
+}

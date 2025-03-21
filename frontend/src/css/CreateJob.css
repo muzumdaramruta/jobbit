@@ -1,0 +1,26 @@
+.create-job-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.create-job-container h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.create-job-container .mb-3 {
+    margin-bottom: 15px;
+}
+
+.create-job-container label {
+    font-weight: bold;
+}
+
+.create-job-container textarea {
+    height: 100px;
+}
+
+.create-job-container button {
+    margin-top: 20px;
+}

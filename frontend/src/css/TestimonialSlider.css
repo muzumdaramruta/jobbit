@@ -1,0 +1,16 @@
+.testimonial-slider .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 100%;
+}
+
+.testimonial-slider {
+    padding: 10px 0px 40px;
+}
+
+/* add nice review font for blockquote inside the carousell */
+.testimonial-slider blockquote {
+    font-family: 'initial';
+    font-style: italic;
+}

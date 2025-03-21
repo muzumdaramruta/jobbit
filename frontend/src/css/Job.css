@@ -1,0 +1,75 @@
+.job-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px 3em;
+    margin-bottom: 20px;
+}
+
+.job-title {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.description {
+    margin-top: 10px;
+}
+
+.details {
+    margin-top: 15px;
+}
+
+.requirements {
+    margin-top: 15px;
+}
+
+.requirements ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.requirements li {
+    margin-bottom: 5px;
+}
+
+.job-card svg:hover {
+    cursor: pointer
+}
+.status-column {
+    display: flex;
+    align-items: center;
+}
+
+.status-text {
+    display: none;
+    /* Hide the text visually */
+}
+
+.status-icons {
+    display: flex;
+    justify-content: space-around;
+    width: 100px;
+    /* Adjust width as needed */
+}
+
+.status-icons .icon {
+    padding: 0.5em;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.status-icons .icon:hover {
+    transform: scale(1.5);
+}
+
+.success-icon {
+    color: green;
+}
+
+.danger-icon {
+    color: red;
+}
+
+.warning-icon {
+    color: orange;
+}
