@@ -23,7 +23,7 @@ To run the project locally, follow these steps:
     ```bash
     cd frontend
     npm i
-    npm run dev
+    npm start
     ```
 
 
